@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Novo Auth
 
-## Getting Started
+## Descrição do Projeto
+Aplicativo web mobile para gestão de salões de beleza (SaaS) usando Next.js para o frontend e Node.js com Supabase para o backend.
 
-First, run the development server:
+## Estrutura do Projeto
+- Baseado na pasta `app`
+- Uso de `bootstrap` para CSS
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Dificuldades Enfrentadas e Soluções
+- **Erro com Client Components:** Necessidade de incluir a diretiva `use client`
+- **Erro com Exportação de Metadata:** Remover exportação de metadata em componentes marcados com `use client`
+- **Instalação Indesejada do TypeScript:** Remover referências a arquivos TypeScript e evitar reinstalação
+- **Erro de Dependência de TailwindCSS:** Remover completamente TailwindCSS
+- **Dificuldade com Exclusão de Arquivos TypeScript:** Remover configurações relacionadas ao TypeScript
+- **Problemas com Autenticação e Registro:** Implementar registro e login com Supabase
+- **Problemas ao Diferenciar Componentes Client e Server:** Ajustar diretivas `use client` e `use server`
+- **Problemas Gerais de Configuração e Compilação:** Corrigir configuração do projeto
+- **Configuração Incorreta do Supabase Client:** Corrigir conforme tutorial do Supabase
+- **Erro com `<Link>` e `<a>`:** Utilizar `legacyBehavior` em `<Link>` quando necessário
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Configuração dos Middlewares
+- Dois arquivos middleware:
+  - **Raiz:** Atualmente sem funcionalidade clara
+  - **`utils/supabase/middleware.js`:** Configuração e atualização da sessão do Supabase
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Outros Detalhes
+- Não usamos TypeScript
+- CSS tratado por Bootstrap
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Links Úteis
+- [Video tutorial](https://www.youtube.com/watch?v=yDJcdDa6la0)
+- [Documentação Supabase](https://supabase.com/docs/guides/auth/server-side/nextjs)
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Comandos Git
+Para atualizar o `README.md` localmente e fazer o push:
+1. `notepad README.md`
+2. `git add README.md`
+3. `git commit -m "Atualiza o README.md com informações detalhadas"`
+4. `git push origin main`
