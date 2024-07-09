@@ -1,13 +1,17 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, FormEvent, ChangeEvent } from 'react';
 
 export default function ForgotPassword() {
-  const [email, setEmail] = useState('');
+  const [email, setEmail] = useState<string>('');
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     // Lógica para enviar e-mail de recuperação de senha
+  };
+
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+    setEmail(e.target.value);
   };
 
   return (
@@ -21,7 +25,7 @@ export default function ForgotPassword() {
             className="form-control"
             id="email"
             value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            onChange={handleChange}
             required
           />
         </div>
@@ -33,5 +37,3 @@ export default function ForgotPassword() {
     </div>
   );
 }
-
-

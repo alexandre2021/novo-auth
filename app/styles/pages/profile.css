@@ -1,0 +1,241 @@
+.profile-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 80px;
+  background-color: #f8f9fa;
+  padding-top: 20px;
+}
+
+.profile-body {
+  flex: 1;
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  padding: 20px;
+}
+
+.profile-container h2.profile-align-left, 
+.profile-container h3.profile-align-left {
+  text-align: left;
+  width: 100%;
+}
+
+.profile-container h3.profile-align-left {
+  font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+.profile-image-container {
+  position: relative;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.profile-image {
+  fill: gainsboro;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-placeholder {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  color: #fff;
+}
+
+.profile-upload-icon-button {
+  background: white;
+  border: none;
+  padding: 5px;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  bottom: 20px;
+  right: 35%;
+}
+
+.profile-upload-icon-button:hover {
+  background: white;
+}
+
+.profile-upload-icon-svg {
+  fill: #007bff;
+  width: 20px;
+  height: 20px;
+}
+
+.profile-upload-icon-svg:hover {
+  fill: #0e4783;
+}
+
+.profile-form-label {
+  text-align: left;
+  width: 100%;
+}
+
+.profile-form-control {
+  flex-grow: 1;
+}
+
+.profile-edit-btn {
+  z-index: 1;
+  background-color: #007bff;
+  border-radius: 4px;
+  padding: 4px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-left: -40px; /* Ajuste conforme necessário */
+}
+
+.profile-edit-btn:hover {
+  background-color: #0056b3; /* Cor de fundo no hover */
+}
+
+.profile-edit-btn svg {
+  fill: white;
+}
+
+.profile-edit-btn:hover svg {
+  fill: white; /* Cor do ícone no hover */
+}
+
+.profile-mb-3 {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.profile-common-style, .profile-form-control, .telefone-input {
+  width: 100%;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  height: 40px;
+  padding: 8px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.profile-btn-primary {
+  width: 100%;
+  background-color: #007bff;
+  border-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  height: 40px;
+  margin-top: 15px;
+}
+
+.profile-btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.profile-delete-btn {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+  height: 40px;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.profile-delete-btn:hover {
+  background-color: darkred;
+}
+
+input:focus, select:focus {
+  outline: none;
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.5);
+  border: 1px solid #007bff;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: none;
+}
+
+.profile-align-left {
+  text-align: left;
+}
+
+.profile-readonly {
+  background-color: #f0f0f0;
+  color: #6c757d;
+  pointer-events: none;
+  cursor: default;
+}
+
+.profile-readonly, select:focus {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .profile-container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .sidebar {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+  }
+
+  .profile-body {
+    padding: 10px;
+  }
+
+  .profile-image {
+    width: 120px;
+    height: 120px;
+  }
+
+  .profile-placeholder {
+    width: 120px;
+    height: 120px;
+    font-size: 80px;
+  }
+
+  .profile-upload-button {
+    width: 100%;
+  }
+
+  .profile-form-label, .profile-form-control, .profile-btn-primary, .profile-delete-btn {
+    width: 100%;
+  }
+}

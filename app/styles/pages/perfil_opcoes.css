@@ -1,0 +1,125 @@
+.perfil-opcoes-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.perfil-opcoes-btn-back {
+  background-color: #6c757d;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.perfil-opcoes-body {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.perfil-opcoes-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.perfil-opcoes-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.perfil-opcoes-button {
+  height: 40px;
+  padding: 8px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.perfil-opcoes-button:hover {
+  background-color: #0056b3;
+}
+
+.perfil-opcoes-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.perfil-opcoes-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.perfil-opcoes-text-hidden {
+  color: #ccc;
+}
+
+.perfil-opcoes-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.perfil-opcoes-visibility-btn,
+.perfil-opcoes-edit-btn,
+.perfil-opcoes-delete-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.perfil-opcoes-visibility-btn.perfil-opcoes-btn-green {
+  background-color: #28a745;
+}
+
+.perfil-opcoes-visibility-btn.perfil-opcoes-btn-gray {
+  background-color: #6c757d;
+}
+
+.perfil-opcoes-edit-btn {
+  background-color: #007bff;
+}
+
+.perfil-opcoes-edit-btn:hover {
+  background-color: #0056b3;
+}
+
+.perfil-opcoes-delete-btn {
+  background-color: #dc3545;
+}
+
+.perfil-opcoes-delete-btn:hover {
+  background-color: #c82333;
+}
+
+.perfil-opcoes-icon {
+  fill: white !important;
+  width: 16px !important;
+  height: 16px !important;
+  transform: scale(0.8) !important;
+}
+

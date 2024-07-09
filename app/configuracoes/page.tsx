@@ -1,17 +1,17 @@
-// app/calendar/page.tsx
+// app/configuracoes/page.tsx
 import React from 'react';
 import Sidebar from '../components/Sidebar';
 
-const ClientsPage: React.FC = () => {
+const ConfiguracoesPage: React.FC = () => {
   return (
     <div className="d-flex">
       <Sidebar />
       <div className="container p-4">
-        <h1>Clientes</h1>
-        {/* Conteúdo de clientes */}
+        <h1>Configurações</h1>
+        {/* Conteúdo de configurações */}
       </div>
     </div>
   );
 };
 
-export default ClientsPage;
+export default ConfiguracoesPage;

@@ -1,0 +1,171 @@
+/* CSS do Step 3 - Seleção de Perfis */
+
+.step3-container {
+  margin: 20px auto;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+}
+
+.step3-container h1 {
+  font-size: 22px;
+  text-align: center;
+}
+
+.step3-container h2 {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 1px;
+}
+
+.step3-services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.step3-services-grid .step3-col {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.step3-services-grid input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #007bff;
+  background-color: white;
+  cursor: pointer;
+  margin-right: 10px;
+  display: grid;
+  place-content: center;
+}
+
+.step3-services-grid input[type="checkbox"]:checked {
+  background-color: #007bff;
+  border: none;
+}
+
+.step3-services-grid input[type="checkbox"]:checked::before {
+  content: "✓";
+  color: white;
+  font-size: 16px;
+  left: 4px;  
+}
+
+.step3-button-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.step3-btn-wrapper-left {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 5px;
+  align-items: center;
+}
+
+.step3-btn-wrapper-right {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 5px;
+  align-items: center;
+}
+
+.step3-step-indicator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.step3-step-indicator span {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: #ddd;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.step3-step-indicator .step3-completed {
+  background-color: #ddd;
+}
+
+.step3-step-indicator .step3-active {
+  background-color: #007bff;
+}
+
+/* CSS personalizado para step3-btn-primary e step3-btn-secondary */
+.step3-btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  height: 40px;
+  width: 150px;
+  margin-left: 5px;
+}
+
+.step3-btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.step3-btn-secondary {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+  height: 40px;
+  width: 150px;
+  margin-right: 5px;
+}
+
+.step3-btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+/* Estilizações para responsividade */
+@media (max-width: 768px) {
+  .step3-services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .step3-btn-wrapper-left,
+  .step3-btn-wrapper-right {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .step3-btn-primary,
+  .step3-btn-secondary {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .step3-services-grid {
+    grid-template-columns: 1fr;
+  }
+}

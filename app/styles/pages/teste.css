@@ -1,0 +1,85 @@
+.teste-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .teste-body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .teste-align-left {
+    text-align: left;
+    width: 100%;
+  }
+  
+  .teste-image-container {
+    position: relative;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .teste-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .teste-placeholder {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    color: #fff;
+  }
+  
+  .teste-upload-icon-button {
+    background: white;
+    border: none;
+    padding: 5px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+  
+  .teste-upload-icon-svg {
+    fill: #007bff;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .teste-upload-icon-svg:hover {
+    fill: #0e4783;
+  }
+  
+  .teste-btn-primary {
+    width: 100%;
+    background-color: #007bff;
+    border-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    height: 40px;
+    margin-top: 15px;
+  }
+  
+  .teste-btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+    

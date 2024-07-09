@@ -1,0 +1,189 @@
+/* CSS da Dashboard */
+.d-flex {
+  display: flex;
+}
+
+.container {
+  margin: 20px auto;
+  height: 90vh;
+  display### Código Completo de `dashboard.css`
+
+```css
+/* CSS da Dashboard */
+.d-flex {
+  display: flex;
+}
+
+.container {
+  margin: 20px auto;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  width: 80%;
+  z-index: 2;
+}
+
+h1 {
+  font-size: 22px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 1px;
+}
+
+.tipo-estabelecimento {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.tipo-estabelecimento .col {
+  flex: 1 0 21%;
+  max-width: 21%;
+  text-align: center;
+  margin: 10px;
+  position: relative;
+}
+
+.tipo-estabelecimento input[type="radio"] {
+  display: none;
+}
+
+.tipo-estabelecimento img {
+  width: 100%;
+  height: auto;
+  max-width: 100px;
+  transition: transform 0.3s;
+}
+
+.tipo-estabelecimento input[type="radio"]:checked + label img {
+  /*transform: scale(1.2);*/
+  border: 2px solid #007bff;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.tipo-estabelecimento label {
+  cursor: pointer;
+  display: inline-block;
+  width: 100%;
+}
+
+.tipo-estabelecimento label p {
+  margin-top: 10px;
+  color: #333;
+}
+
+.tipo-estabelecimento input[type="radio"]:checked + label p {
+  color: #007bff;
+}
+
+/*Hover para tipo de estabelecimento*/
+.tipo-estabelecimento label:hover img {
+  border: 2px solid #007bff;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.tipo-estabelecimento label:hover p {
+  color: #007bff;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos adicionais para indicadores de passos */
+.step-indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.step-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin: 0 5px;
+}
+
+.step-indicator.active {
+  background-color: #007bff;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.header svg {
+  position: absolute;
+  left: 20px;
+  cursor: pointer;
+}
+
+/* Estilos para a lista de serviços/perfis */
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centraliza o conteúdo */
+}
+
+.services-list li {
+  margin: 0 10px; /* Espaçamento horizontal entre os itens */
+}
+
+.services-list label {
+  display: flex;
+  align-items: center;
+}
+
+.services-list input[type="checkbox"] {
+  margin-right: 5px; /* Espaçamento entre o checkbox e o texto */
+}
+
+/* Estilos para a máscara */
+.mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(211, 211, 211, 0.5);
+  z-index: 1;
+}
+
+/* Estilos para direitos de imagem */
+.image-rights {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 10px;
+  color: #333;
+}

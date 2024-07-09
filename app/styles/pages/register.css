@@ -1,0 +1,49 @@
+/* Estilos para o checkbox customizado */
+.register-checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.register-checkbox input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #007bff;
+  background-color: white;
+  cursor: pointer;
+  margin-right: 10px;
+  display: grid;
+  place-content: center;
+}
+
+.register-checkbox input[type="checkbox"]:checked {
+  background-color: #007bff;
+  border: none;
+}
+
+.register-checkbox input[type="checkbox"]:checked::before {
+  content: "✓";
+  color: white;
+  font-size: 16px;
+}
+
+/* Remover estilos padrão do Bootstrap */
+.register-checkbox .form-check-input {
+  position: static;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  height: auto;
+  background: none;
+  border: none;
+}
+
+.link-terms {
+  text-decoration: underline;
+  color: #007bff;
+}
+
+.link-terms:hover {
+  text-decoration: none;
+}

@@ -1,0 +1,37 @@
+.topbar {
+    background-color: #f0f0f0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .topbar a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 18px;
+  }
+  
+  .topbar a:hover {
+    color: #0056b3;
+  }
+  
+  .topbar .button-login {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    display: inline-block;
+  }
+  
+  .topbar .button-login:hover {
+    background-color: #0056b3;
+    color: white;
+  }
+  
